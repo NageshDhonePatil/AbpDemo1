@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="..\..\common.props" />
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <RootNamespace>AbpDemo1</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\AbpDemo1.Domain\AbpDemo1.Domain.csproj" />
+    <ProjectReference Include="..\AbpDemo1.Application.Contracts\AbpDemo1.Application.Contracts.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNet.Identity.Core" Version="2.2.3" />
+    <PackageReference Include="Volo.Abp.Account.Application" Version="7.2.1" />
+    <PackageReference Include="Volo.Abp.Identity.Application" Version="7.2.1" />
+    <PackageReference Include="Volo.Abp.PermissionManagement.Application" Version="7.2.1" />
+    <PackageReference Include="Volo.Abp.TenantManagement.Application" Version="7.2.1" />
+    <PackageReference Include="Volo.Abp.FeatureManagement.Application" Version="7.2.1" />
+    <PackageReference Include="Volo.Abp.SettingManagement.Application" Version="7.2.1" />
+  </ItemGroup>
+
+</Project>
